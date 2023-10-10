@@ -1,0 +1,505 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Log_in_via_user_input" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="644,5608" sap2010:WorkflowViewState.IdRef="Log_in_via_user_input_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uue="clr-namespace:UiPath.UIAutomationNext.Exceptions;assembly=UiPath.UIAutomationNext" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Exceptions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="this is where the user is  promted to put in the login credentials and if any element is not found it captures any exceptions through the try catch" DisplayName="Log_in_via_user_input" sap:VirtualizedContainerService.HintSize="654,5543" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Password" />
+      <Variable x:TypeArguments="x:String" Name="Username" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="592,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;You will be required to enter credentials&quot;]" />
+    <Sequence sap:VirtualizedContainerService.HintSize="592,874" sap2010:WorkflowViewState.IdRef="Sequence_17">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="this is where you are promted to put in username" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="496,239" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Please enter your email address" Title="Email address">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Username]</OutArgument>
+        </ui:InputDialog.Result>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InputDialog>
+      <Sequence sap:VirtualizedContainerService.HintSize="496,484" sap2010:WorkflowViewState.IdRef="Sequence_16">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,373" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+          <TryCatch.Try>
+            <If Condition="[Username=(&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="410,360" sap2010:WorkflowViewState.IdRef="If_4">
+              <If.Then>
+                <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="376,178" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_10" Reason="username has not been provided" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_15" />
+              </If.Else>
+            </If>
+          </TryCatch.Try>
+          <TryCatch.Catches>
+            <Catch x:TypeArguments="WorkflowTerminatedException" sap:VirtualizedContainerService.HintSize="400,210" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ActivityAction x:TypeArguments="WorkflowTerminatedException">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="WorkflowTerminatedException" Name="exception" />
+                </ActivityAction.Argument>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;workflow terminated due to lack of username &quot;+exception.message]" />
+              </ActivityAction>
+            </Catch>
+          </TryCatch.Catches>
+        </TryCatch>
+      </Sequence>
+    </Sequence>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="this is where you are promted to put password" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="592,270" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="True" Label="Please enter your passoword" Title="Password">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Password]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="592,373" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+      <TryCatch.Try>
+        <If Condition="[Password=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="410,360" sap2010:WorkflowViewState.IdRef="If_5">
+          <If.Then>
+            <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="376,178" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_12" Reason="No password was provided" />
+            </Sequence>
+          </If.Then>
+          <If.Else>
+            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_19" />
+          </If.Else>
+        </If>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="WorkflowTerminatedException" sap:VirtualizedContainerService.HintSize="400,210" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="WorkflowTerminatedException">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="WorkflowTerminatedException" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;workflow terminated  due to lack of password &quot;+exception.Message]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="592,3628" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3bea1cd2-777d-409a-9e2d-d06fc749a26c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,3411" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch sap2010:Annotation.AnnotationText="this is means if the username in not found then the bot stops" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="496,406" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3bea1cd2-777d-409a-9e2d-d06fc749a26c" Text="[Username]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" CvElementArea="163, 460, 488, 37" CvTextArea="175, 472, 153, 16" CvTextArgument="zighelucy36@gmail.com" CvType="InputBox" DesignTimeRectangle="164, 462, 485, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT email'" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ' aaname='Email:' /&gt;" Guid="eb4aaa0c-b1fd-40e7-ba2b-264179c5defe" ImageBase64="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" InformativeScreenshot="ba109cf722bf6fb9edd09e8f8f0cd4ea.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArgument="Email:" CvType="Text" DesignTimeRectangle="164, 437, 42, 20" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Email:' check:innerText='Email:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAYCAYAAACFms+HAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADgSURBVFhH7ZPRDYQgDEBvJ6aRUWAUwySGTQyr9Dxp4aiSM6i9mPCSflCgfSC+4KF0cWm6uDRdXJokHkYNSqlKWPC47lo82KI+H9f5szjnhLgeA2Z2mGw8iHHgBnYomtvUIJkcdsKpjSgfB+yjwc1rItEmzmPQoIscNaLGPGqiJ8R3w8QyWRwLzy4Jx1vMovlWv+Eiv8TrtInTeKeRN3EPF6d8jBvEj73xo+L8hm+88UvF6SkNblFeZ3G91FOhRq3imzgqfvbnbBVfKOp+9mGN+GUvEH8aXVyaLi5NF5cF4A1BMW6/A7QegAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="400,212" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                    </ActivityAction.Argument>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;element for email was not found  &quot;+exception.message]" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <TryCatch sap2010:Annotation.AnnotationText="this is means if the password is  not found then the bot stops" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="496,375" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="3bea1cd2-777d-409a-9e2d-d06fc749a26c" Text="[Password]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" CvType="InputBox" DesignTimeRectangle="164, 536, 485, 34" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ' aaname='Password:' /&gt;" Guid="92a67b06-8f2e-4439-81c6-77489c8670aa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAekAAAAmCAYAAADgB2NCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIYSURBVHhe7dhBbhJhGMfhOZjdeBPTpYfoAXoGd116CxfdUHZGBZI2JZXGWtEF0aj4yUthMsRpZTFM3sXzT54FHzPN0M0vUBUzMzNLOZE2MzNLup1ILxaLMhpPysVwWAaDAQDQg+hu9Dc63Fwd6XgjLno3npb3l3flw9U9ANCD6G70NzrcDHUd6Sh4XDCZfivTux/l45ffAEAPorvR3+hw9Hi7OtJR7/H1vNzc/yq3X5crfwCAXizX/Y0OR4+3qyMdv4lff/peZnOBBoC+RX+jw9Hj7XYiHV+5224EAA4vOizSAJCQSANAUiINAEmJNAAkJdIAkJRIA0BSIg0ASYk0ACQl0gCQlEgDQFLdRvr8tDyrqlKtvDh74uzs5fp1VT0vJ+ePn706frivOjotb+Kavc/elpOjzdnx64e/33a27/N2/BkAYB+dRroOUiNK/541YhnWwWw5a4QxrOO471kdy7AJZsvZfs/b8WfY/K8A4H98k47XK08+b8efAQD20W2kAYDOiDQAJCXSAJCUSANAUiINAEmJNAAkJdIAkJRIA0BSIg0ASYk0ACQl0gCQ1KORvhgOy83nn603AQCHFx2OHm9XR3o0npTR5azM5svWGwGAw4n+Roejx9vVkV4sFut6j69uy8zP3gDQm+hu9Dc6HD3ero50LN6IgsdF8Zs4AHB40d3obzPQsZ1Im5mZWZ6JtJmZWcqV8hc9KuZ5vi6mpAAAAABJRU5ErkJggg==" InformativeScreenshot="0ecc2c1fcaf0ec02f10f0adbb7e64456.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArgument="Password:" CvType="Text" DesignTimeRectangle="164, 511, 71, 20" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' type='' class='' check:innerText='Password:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAYCAYAAACyVACzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGxSURBVFhH7ZTbbcMwDEW7k6eJR7FGMTxJ4E0Cr6JaEq9IPWyFLQoUAS/Aj4TvI8lf3vS2DJZCBkshg6WQwVLIYClksBTKsI519tM0dcz5nWI+Uk8X95zXg/641huwgn0wsN/AKpMOvz0CrNlvL/qnhvrYzigI8WzuSa6oa3/T/7X5OcbwQSEGOfsia/GMUch/OO+oZ6q9e5dzztoNrHZnSAeLCteGnHJ4GDe99WO5hdCIXgkOZknw+rXE4WTYsNCnPSzYj2B1rbg9QliIFkwLtE2ge/81jLiIhNm5dXkWzJpjRL98AJyHPuUl6WsMqweqPrXObUgmlgka+BkmgcMTCjNQbljq/hVQTcwo5u/mibojDZ5hJSxbw8FvUg2+/G7d+DH44uKiYZYE8IQmb2V3wX8GC1cWy+WlK1hZFzCzGr/8+FIfxARrnpi4mYirYwQsroU8AP5DWI3FZblxbQnuyJ/EPaobcpqc7WqWXKsH62YGro2Y9tuqe4bFyYtvS+ek2iGCRn6eg5fkHAk1qARWLdeFFVTtsKbbpoJlGstgKWSwFDJYChkshQyWQgbrbXn/DaZ+OiH7R7WDAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="400,212" sap2010:WorkflowViewState.IdRef="Catch`1_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                    </ActivityAction.Argument>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;element for password not found &quot;+exception.Message]" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <TryCatch sap2010:Annotation.AnnotationText="this is means if the login element is  not found then the bot stops" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="496,406" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bea1cd2-777d-409a-9e2d-d06fc749a26c" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" CvElementArea="162, 571, 63, 37" CvTextArea="175, 583, 36, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="164, 573, 60, 34" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='                             Login                         ' check:innerText='Login' /&gt;" Guid="04c07d79-80af-4948-8d30-6389f04a9323" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAmCAYAAAB0xJ2ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGbSURBVGhD7Zm9bsIwFIX7RJVa3qh7pS4MhbfoK1B1YehGl2bhCVgisSFVDAwwhInt1ufaTpzIIKUEN7HvkY5C8E98vvhnyB0lLgFgrqz850BPb9/0+PJB98/vURmZkA0ZXZUAUIBKD+NPGr0uaDT5issqE7IhowuhBAA6HN7XOCIjI7JalQBAJso337TKiKxWJQCsE2+DCI2sVgLAXAWAABAAAsBbOUYLgM4ALAui446mvrJrPd/Rnk6UzT1lV3oYAG7ooACm+ck8ASpo5pbzW7YqKENd219tBmxojd+5el6pRl8tHAyADl8NtH6PUET7fKXrWxhnAThlkxVlR3W/3ei2LR0IgB70eun+pwfOoT1tZ1vV4AIAty+GefbZlx0GQC1AZYQEAA7QeIO1UAJg6ACSXwLKPMgON8F+AvDJGZgObdU4umxoljkG7bIYBICOzaH+eLS1cT8A8OxxZ4Rvz7iNezMDeNNzFCI83BsA/2UBIAAEgEktACoAyX8aS/7jaPKfxyEUgA4qYZ3EZGRCNjc8VAOQohIHQPQL5JbnkZgxS98AAAAASUVORK5CYII=" InformativeScreenshot="39b505a889816463f31d36b28b948f84.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArgument="Remember Me" CvType="Text" DesignTimeRectangle="180, 533, 96, 20" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl class='form-check-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form-check-label' tag='LABEL' type='' aaname='                                         Remember Me                                     ' check:innerText='Remember Me' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAAYCAYAAAAMAljuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIZSURBVGhD7VaLjcMgDL2dMk0ZpRklyiRVN6m6CgcBG2OchtCe6pP8JOtaPvZ7fkDvxxtUwQxRBjNEGcwQZTBDlMEMUQYzRBkqQ56L89M0ieGWZ171H3D388Z7Dp/+ELeZ9KiuVfXy2s+i25AY8y0vVI9vGOL8+sjj/unXS+nb24Y0twEKk8S1eRKZMLYUwiknJcqa9Vi9w3w1h/s1jc0LWZO5wFzNoRiyvjip+xpIzStoEMytDCGcmRZat/CN0eYcMkS+SZCcnQ4M5x0fB6JcQA64kbWIEu7CeFzWUH3bkQ1pA7S91iDUZGZuwL7MqR7Uz+NoZt4r6kDOCSeeLDhB0HDibibAbwGIRyKMMHyHuuVJzA3N87i/ORCZAxoKnIohmLOqeaShrSkCcoY1aX3Kh5/JPNcU0eruNYQkoWKb2AqD2PIEQF68edBA3vAmqEChudgs4MQMEXnHNUcahJoSCI/SXFKb8tx5BWJgXwJePlnFIOl9FmJrwCcNSTmGDcHvEXTsSINQU4LU8PCMxr+b1k5Dio6O3xBsFp424bpXOG8IzO+JHzdE2FMdmj0NA4aQmrhPmsc+yuj4US+FYBzW8Ujkzxuye3pyw98xhEefBqGmBMYDDy/w2J2nQV+fLkMCILHQZIiyZ8CQCG4KmRs35My/vbXuEUMOvwdwU3j+yhDD92GGKIMZogxmiDKYIcpghiiDGaIK3v8CJQ4oYP/diDAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="400,212" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                    </ActivityAction.Argument>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;no login element found &quot;+exception.Message]" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <TryCatch sap2010:Annotation.AnnotationText="this is means if the login element not found then the bot stops" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="496,406" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bea1cd2-777d-409a-9e2d-d06fc749a26c" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" CvElementArea="162, 571, 63, 37" CvTextArea="175, 583, 36, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="164, 573, 60, 34" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='                             Login                         ' check:innerText='Login' /&gt;" Guid="c4a874f9-9f48-427f-ad3e-cd1b078f2126" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAmCAYAAAB0xJ2ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGbSURBVGhD7Zm9bsIwFIX7RJVa3qh7pS4MhbfoK1B1YehGl2bhCVgisSFVDAwwhInt1ufaTpzIIKUEN7HvkY5C8E98vvhnyB0lLgFgrqz850BPb9/0+PJB98/vURmZkA0ZXZUAUIBKD+NPGr0uaDT5issqE7IhowuhBAA6HN7XOCIjI7JalQBAJso337TKiKxWJQCsE2+DCI2sVgLAXAWAABAAAsBbOUYLgM4ALAui446mvrJrPd/Rnk6UzT1lV3oYAG7ooACm+ck8ASpo5pbzW7YqKENd219tBmxojd+5el6pRl8tHAyADl8NtH6PUET7fKXrWxhnAThlkxVlR3W/3ei2LR0IgB70eun+pwfOoT1tZ1vV4AIAty+GefbZlx0GQC1AZYQEAA7QeIO1UAJg6ACSXwLKPMgON8F+AvDJGZgObdU4umxoljkG7bIYBICOzaH+eLS1cT8A8OxxZ4Rvz7iNezMDeNNzFCI83BsA/2UBIAAEgEktACoAyX8aS/7jaPKfxyEUgA4qYZ3EZGRCNjc8VAOQohIHQPQL5JbnkZgxS98AAAAASUVORK5CYII=" InformativeScreenshot="b2447dbbc8560dfeca4333f09aad7f88.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="226, 572, 173, 36" CvTextArea="240, 583, 147, 16" CvTextArgument="Forgot Your Password?" CvType="Button" DesignTimeRectangle="228, 573, 172, 34" ElementType="Text" FriendlyName="'Forgot Your Password?'" FullSelectorArgument="&lt;webctrl aaname='                                 Forgot Your Password?          *' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                 Forgot Your Password?          *' tag='A' type='' class='btn bg-warning' check:innerText='Forgot Your Password?' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALAAAAAmCAYAAABkiBEAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPpSURBVHhe7ZxNbtswEIV7p9zGR8kZcgMDOYQ3XXjlnXdZB8giQL3sAdqiDUtySPENOZIt/1Vs3gAfEmr4NzNPtOyFvjgarWOjgGldmxLwx8dP9+fXd/f7x8HzjZCFcIi6DPqsbRBwcFK4ZNkcGhEPApaT1xpEyHIIOkUbBMzTl/TBISlWDARsdSZkeaBRwKQ70Chg0h1oFDDpDjQKmHQHGgVMugONAibdgUYBk+5Au1DAL+7x8at7sHjauzdzzG1522zdw/OL4Ut7NfeVfOa4a/Lq1k+QI2C1eTX694rk83FfrsW6QLzomwvaFQS8det3y/dvGBew533vVoZY4pi73HAi4LZ4UvD/R8RawCLendtmf6rDuSJGu4uA9d0HgcTxO7fO/iyi/a7099fWz/4vihL9sL5aZ0SQ0gf2HJOJMUjy8zwoqlbobaFWm/0wvi3QmIDT3EOM7Und7GPw6fzbPpnveCylNnqe4zVT/Z93kJd27cC2rukM0G4uYAmsTkxuJ7FgIPXdmcWa+8Q2rFm14/yTiUniiImvkyv7GWvHuY8IuBaURtabFnDaH8Sg5o3xgqCwPeHTeUlr1H2TX9YrPt1ua1b3j+KEvFiEPrWoTwXtRs/AOlgdCIqm9etEl/5yDceWMXg3t+MtZN3Vk+8LgoxjlUA9tQiOCbger5D9N4U99pGKnxK1SJEpX5wD6+JPSZ+3vGbIofw/t2ZWTaw5CiLwkX2eANptT+Dm41kod18bqHVnFoHaiUHRniZgTyy23ltZB/pB4a8l4PaGb2MOSKEzea96Dp2LKR/UKp22Yb+lDklQs2tm1UT2oa8JEtP54g2gfV4BqxNJKOvY/a4lYKuwiBTZk+eayKOI9TRfuBZyOwg3zBvWCH9z3BNrXSzgkbnngnbjZ+Dx4MYE3AownSrxGo4tY2Kx0phLBGwK8B6PEAojp5OFt3Ni+uLJ678U+0cnmSusJV/Iyp7m1sxa35rDM/WIMwO0RXyJU4HGYsG1GHQRqLRhzaod5z9TwHk/pRhV21oL9no9AWMfaQ/r1iJAcU/5hnaYK/eR/agxntk1q9bNp/90nOeDdnMBB3KhBUyWkYxATEjq7wURfkZTdzj66/WbIo1gCjiQBSPokwU/moPvRQnyOgL2NPHJnvJecA8BnG/KNwgWbvCxPc+tGfbPPyU2cdY32JmgXSjg+xCKUguJfF7QFifg5kSoPwbJpwdtgSdwfi7LULxEg9bFIwQhCBoFTLoDjQIm3YFGAZPuQKOASXeggYD5ainSAyOvluLL/UgPjL7cj69XJctn4vWqwYJTTmIKmSyJE15wTaP1aBQwrWNz7i+p61DCj+RiVAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="400,212" sap2010:WorkflowViewState.IdRef="Catch`1_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                    </ActivityAction.Argument>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;no login element found &quot;+exception.Message]" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="496,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1413" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="HoverText" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch sap2010:Annotation.AnnotationText="this is means if the hover  is not found then the bot stops" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,406" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <uix:NHover DisplayName="Hover 'User options'" sap:VirtualizedContainerService.HintSize="334,157" HoverTime="5" sap2010:WorkflowViewState.IdRef="NHover_1" ScopeIdentifier="3bea1cd2-777d-409a-9e2d-d06fc749a26c" Version="V3">
+                    <uix:NHover.Target>
+                      <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/" CvElementArea="161, 425, 205, 50" CvTextArea="223, 441, 102, 20" CvTextArgument="User options" CvType="Button" DesignTimeRectangle="162, 425, 204, 50" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'User options'" Guid="f2b25db6-e2e8-45d8-8fab-d66cb5118c15" InformativeScreenshot="f8e4494df818bf1ff00e6120d3ba8cdc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvElementArea="161, 481, 204, 50" CvTextArea="229, 497, 93, 16" CvTextArgument="Work Items" CvType="Button" DesignTimeRectangle="161, 482, 204, 50" ElementType="Button" FriendlyName="'Work Items'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NHover.Target>
+                  </uix:NHover>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="400,212" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;Element for hover over was missing &quot;+exception.Message]" />
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <TryCatch sap2010:Annotation.AnnotationText="this is means if the download client in not found then the bot stops" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,406" sap2010:WorkflowViewState.IdRef="TryCatch_11">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download Client'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bea1cd2-777d-409a-9e2d-d06fc749a26c" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/home" CvTextArgument="Download Client and Support" CvType="Text" DesignTimeRectangle="404, 441, 184, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Download Client'" Guid="25405e93-8f2b-4bc8-b088-60f41c747c95" InformativeScreenshot="1aa893ec670eeb8e87c79b8a35856373.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvElementArea="161, 425, 204, 50" CvTextArea="223, 441, 102, 20" CvTextArgument="User options" CvType="Button" DesignTimeRectangle="161, 425, 204, 50" ElementType="Button" FriendlyName="'User options'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="400,212" sap2010:WorkflowViewState.IdRef="Catch`1_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;download  client button not found &quot;+exception.Message]" />
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <TryCatch sap2010:Annotation.AnnotationText="this is means if the download button is not found then the bot stops" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,406" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3bea1cd2-777d-409a-9e2d-d06fc749a26c" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/download-client" CvElementArea="461, 420, 136, 51" CvTextArea="487, 437, 80, 15" CvTextArgument="Download" CvType="Button" DesignTimeRectangle="464, 423, 129, 47" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Download'" FullSelectorArgument="&lt;webctrl class='btn' parentid='pagetext' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='btn' parentid='pagetext' tag='A' type='' aaname='Download' check:innerText='Download' /&gt;" Guid="5f5b7fc8-3d57-4199-8ade-87b86b4bc0c2" ImageBase64="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" InformativeScreenshot="cb84cb8414f657066fc44a43ba4fc763.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Download Client and Support' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="214, 388, 200, 66" ElementType="Text" FriendlyName="'Legacy System'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='Legacy System' check:innerText='Legacy System' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="400,212" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;download button not found &quot;+exception.Message]" />
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" IconBase64="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" InformativeScreenshot="3d0a1683347167c71e6017a44b29ee17.jpg" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" Title="ACME System 1 - Log In" Url="https://acme-test.uipath.com/login" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
